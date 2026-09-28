@@ -3,13 +3,25 @@
 
 # Environment variables / secrets
 .env
+.env.*
+!.env.example
+.env*.local
+frontend/.env*
+!frontend/.env.example
 
 # Python
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Streamlit
+# Frontend & Dependencies
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+frontend/.vite/
+
+# Streamlit (legacy)
 .streamlit/secrets.toml
 
 # IDE
